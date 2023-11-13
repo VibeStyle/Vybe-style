@@ -1,0 +1,21 @@
+{
+  "short_name": "VibeStyle",
+  "name": "VibeStyle",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "description": "VibeStyle is a leading UI/UX design agency, specializing in creating visually appealing and user-friendly interfaces. Our experts assist brands and startups in enhancing user satisfaction, improving conversion rates, and achieving success in the digital realm. We design not just for aesthetics but also for functionality, ensuring an optimal user experience.",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#000000"
+}
