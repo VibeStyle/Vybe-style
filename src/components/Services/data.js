@@ -22,59 +22,88 @@ import logoTablet from './img/bgLogoTablet.jpg';
 import logoTablet2x from './img/bgLogoTablet2x.jpg';
 import logoMax from './img/bgLogoMax.jpg';
 import logoMax2x from './img/bgLogoMax2x.jpg';
-// import { useTranslation } from 'react-i18next';
+import designIcon from './img/design_icon.png';
+import devIcon from './img/dev_icon.png';
 
 export const data = [
-    {
-        id: "01",
-        text: "WEB SITE",
-        textUa: "ВЕБ-САЙТ",
-        hiddenText: "We create intuitively understandable and aesthetically appealing websites that will help you attract and retain customers.",
-        hiddenTextUa: "Ми створюємо інтуїтивно зрозумілі та естетично привабливі веб-сайти, які допоможуть вам залучити та утримати клієнтів.",
-        photoMob: webMobile,
-        photoMob2x: webMobile2x,
-        photoTablet: webTablet,
-        photoTablet2x: webTablet2x,
-        photoMax: webMax,
-        photoMax2x: webMax2x
-         },
-    {
-          id: "02",
-        text: "MOBILE APP",
-        textUa: "МОБІЛЬНИЙ ДОДАТОК",
-        hiddenText: "We design mobile app layouts keeping in mind the latest trends and technologies to provide the best user experience.",
-        hiddenTextUa: "Розробляємо мобільні додатки, враховуючи останні тренди та технології, для забезпечення найкращого користувацького досвіду.",
-        photoMob: appMobile,
-        photoMob2x: appMobile2x,
-        photoTablet: appTablet,
-        photoTablet2x: appTablet2x,
-        photoMax: appMax,
-        photoMax2x: appMax2x
-    },
-    {
-            id: "03",
-        text: "CRM",
-        textUa: "CRM",
-        hiddenText: "We design customer relationship management (CRM) systems that help you manage your customers and sales effectively.",
-        hiddenTextUa: "Проектуємо системи управління взаємовідносинами з клієнтами (CRM), які допоможуть вам ефективно керувати вашими клієнтами та продажами.",
-        photoMob: crmMobile,
-        photoMob2x: crmMobile2x,
-        photoTablet: crmTablet,
-        photoTablet2x: crmTablet2x,
-        photoMax: crmMax,
-        photoMax2x: crmMax2x
-            },
-    {
-              id: "04",
-        text: "LOGO",
-        textUa: "ЛОГОТИП",
-        hiddenText: "We create unique and unforgettable logos for you that reflect your brand identity.",
-        hiddenTextUa: "Створимо для Вас унікальні та незабутні логотипи, які відображають ідентичність вашого бренду.",
-       photoMob: logoMobile,
-        photoMob2x: logoMobile2x,
-        photoTablet: logoTablet,
-        photoTablet2x: logoTablet2x,
-        photoMax: logoMax,
-        photoMax2x: logoMax2x
-            },
-    ]
+  {
+    id: '01',
+    text: (
+      <>
+        <span>WEBSITE</span>
+        <span style={{ marginRight: '8px' }}> + LOGO </span>
+      </>
+    ),
+    textUa: (
+      <>
+        <span>ВЕБСАЙТ</span>
+        <span> + ЛОГО </span>
+      </>
+    ),
+    hiddenText:
+      "We create user-friendly websites and unique logos that highlight your brand's identity and attract customers.",
+    hiddenTextUa:
+      'Ми створюємо зручні веб-сайти та унікальні логотипи, які підкреслюють ідентичність вашого бренду та залучають клієнтів.atq1at.',
+    photoMob: webMobile,
+    photoMob2x: webMobile2x,
+    photoTablet: webTablet,
+    photoTablet2x: webTablet2x,
+    photoMax: webMax,
+    photoMax2x: webMax2x,
+    icon: designIcon,
+  },
+  {
+    id: '02',
+    text: 'MOBILE APP',
+    textUa: 'МОБІЛЬНИЙ ДОДАТОК',
+    hiddenText:
+      'We design mobile app layouts keeping in mind the latest trends and technologies to provide the best user experience.',
+    hiddenTextUa:
+      'Розробляємо мобільні додатки, враховуючи останні тренди та технології, для забезпечення найкращого користувацького досвіду.',
+    photoMob: appMobile,
+    photoMob2x: appMobile2x,
+    photoTablet: appTablet,
+    photoTablet2x: appTablet2x,
+    photoMax: appMax,
+    photoMax2x: appMax2x,
+    icon: designIcon,
+  },
+  {
+    id: '03',
+    text: 'CRM',
+    textUa: 'CRM',
+    hiddenText:
+      'We design customer relationship management (CRM) systems that help you manage your customers and sales effectively.',
+    hiddenTextUa:
+      'Проектуємо системи управління взаємовідносинами з клієнтами (CRM), які допоможуть вам ефективно керувати вашими клієнтами та продажами.',
+    photoMob: crmMobile,
+    photoMob2x: crmMobile2x,
+    photoTablet: crmTablet,
+    photoTablet2x: crmTablet2x,
+    photoMax: crmMax,
+    photoMax2x: crmMax2x,
+    icon: designIcon,
+  },
+  {
+    id: '04',
+    text: (
+      <>
+        <span>DEVELOP</span>
+        <span style={{ marginRight: '40px' }}>MENT</span>
+      </>
+    ),
+    textUa: 'РОЗРОБКА',
+
+    hiddenText:
+      'Website development on WordPress, Webflow, Tilda, Square Space,  We can also write clean code for a website: HTML, CSS, JS.',
+    hiddenTextUa:
+      'Розробка сайтів на WordPress, Webflow, Tilda, Square Space, також можемо написати чистий код для сайту: HTML, CSS, JS.',
+    photoMob: logoMobile,
+    photoMob2x: logoMobile2x,
+    photoTablet: logoTablet,
+    photoTablet2x: logoTablet2x,
+    photoMax: logoMax,
+    photoMax2x: logoMax2x,
+    icon: devIcon,
+  },
+];

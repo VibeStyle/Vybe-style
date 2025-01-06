@@ -44,23 +44,6 @@ export const LiItem = styled.li`
     padding-left: 22px;
     padding-right: 12px;
   }
-  @media screen and (min-width: 768px) and (max-width: 1367px) {
-    &::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: url(${props => props.$tabletphoto});
-      background-repeat: no-repeat;
-      background-size: cover;
-      border-right: 0.5px solid ${({ theme }) => theme.colorText};
-      z-index: 0;
-      opacity: 0;
-      transition: opacity 400ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-  }
 
   @media screen and (min-width: 768px) {
     padding-right: 30px;
@@ -81,7 +64,7 @@ export const LiItem = styled.li`
       left: 0;
       width: 100%;
       height: 100%;
-      background: url(${props => props.$desktopphoto});
+      background: url(${props => props.$tabletphoto});
       background-repeat: no-repeat;
       background-size: cover;
       z-index: 0;
@@ -116,6 +99,7 @@ export const LiItem = styled.li`
         transition: opacity ${({ theme }) => theme.animationStyles};
       }
     }
+
     @media screen and (min-width: 1920px) {
       width: calc(100% / 4);
       padding-top: 77px;
@@ -266,59 +250,59 @@ export const Text = styled.p`
   letter-spacing: -0.736px;
   text-transform: uppercase;
   z-index: 2;
+
+  @media screen and (min-width: 768px) {
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1368px) {
+    font-size: 32px;
+    line-height: 1.13;
+    letter-spacing: -1.471px;
+  }
+  @media screen and (min-width: 1920px) {
+    font-size: 48px;
+  }
+
+  .is-hovered & {
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: -1.17px;
+    @media screen and (min-width: 768px) {
+    }
+    @media screen and (min-width: 1368px) {
+      font-size: ${props => (props.$lang === 'en' ? '52px' : '44px')};
+      line-height: 1.3;
+      letter-spacing: -2.34px;
+    }
+    @media screen and (min-width: 1920px) {
+      font-size: ${props => (props.$lang === 'en' ? '76px' : '68px')};
+      line-height: 1.5;
+      letter-spacing: -2.34px;
+    }
+  }
+
   ${LiItem}:hover &,
   ${LiItem}:focus & {
     font-size: 32px;
     line-height: 1;
     letter-spacing: -1.17px;
     @media screen and (min-width: 768px) {
-      margin-top: 50px;
     }
     @media screen and (min-width: 1368px) {
       font-size: ${props => (props.$lang === 'en' ? '52px' : '44px')};
       line-height: 1.3;
       letter-spacing: -2.34px;
-      margin-top: 60px;
     }
     @media screen and (min-width: 1920px) {
       font-size: ${props => (props.$lang === 'en' ? '76px' : '68px')};
       line-height: 1.5;
       letter-spacing: -2.34px;
-      margin-top: 0px;
     }
   }
-  .is-hovered & {
-    font-size: 32px;
-    line-height: 1;
-    letter-spacing: -1.17px;
-    @media screen and (min-width: 768px) {
-      margin-top: 50px;
-    }
-    @media screen and (min-width: 1368px) {
-      font-size: ${props => (props.$lang === 'en' ? '52px' : '44px')};
-      line-height: 1.3;
-      letter-spacing: -2.34px;
-      margin-top: 60px;
-    }
-    @media screen and (min-width: 1920px) {
-      font-size: ${props => (props.$lang === 'en' ? '76px' : '68px')};
-      line-height: 1.5;
-      letter-spacing: -2.34px;
-      margin-top: 0px;
-    }
-  }
-  @media screen and (min-width: 768px) {
-    margin-top: 78px;
-  }
-  @media screen and (min-width: 1368px) {
-    font-size: 32px;
-    line-height: 1.13;
-    letter-spacing: -1.471px;
-    margin-top: 120px;
-  }
-  @media screen and (min-width: 1920px) {
-    margin-top: 60px;
-    font-size: 48px;
+  span {
+    white-space: nowrap;
   }
 `;
 
@@ -351,16 +335,64 @@ export const HiddenText = styled.p`
     font-size: 18px;
     line-height: 1.4;
     letter-spacing: 0px;
-    margin-top: 93px;
-    &${LiItem}:nth-child(2) {
-      margin-top: 0px;
-    }
+    margin-top: 40px;
   }
   @media screen and (min-width: 1920px) {
-    margin-top: 132px;
+    margin-top: 60 px;
     font-size: 24px;
     font-weight: 200;
     line-height: 1.67;
     max-width: 398px;
+  }
+`;
+
+export const CardIcon = styled.img`
+  /* display: none; */
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+  z-index: 2;
+
+  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-bottom: 16px;
+    margin-top: 38px;
+  }
+
+  @media screen and (min-width: 1368px) {
+    width: 60px;
+    height: 60px;
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    margin-top: 60px;
+  }
+
+  ${LiItem}:hover &,
+  ${LiItem}:focus & {
+    opacity: 0;
+  }
+
+  .is-hovered & {
+    opacity: 0;
+  }
+`;
+
+export const NumberIconWrap = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 1368px) {
+  }
+
+  @media screen and (min-width: 1920px) {
   }
 `;
