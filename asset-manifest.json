@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.1c843d24.css",
-    "main.js": "/static/js/main.fa128531.js",
+    "main.css": "/static/css/main.52adb8e9.css",
+    "main.js": "/static/js/main.56b7a920.js",
     "static/media/Frame-1000005822.jpg": "/static/media/Frame-1000005822.aa009cd471404d6dd51d.jpg",
     "static/media/Frame-1000005829.jpg": "/static/media/Frame-1000005829.2a491813d904a8d6a88d.jpg",
     "static/media/Frame-1000005818.jpg": "/static/media/Frame-1000005818.bcae927e0229ccba011a.jpg",
@@ -123,12 +123,12 @@
     "static/media/bgCrmMax2x.jpg": "/static/media/bgCrmMax2x.5a6c040c3b3df2633ad7.jpg",
     "static/media/sadgirl.png": "/static/media/sadgirl.7f497df6acb012e520ad.png",
     "static/media/bgAppMax2x.jpg": "/static/media/bgAppMax2x.104cdf6031a21a6c3adf.jpg",
-    "static/media/bgAppTablet.jpg": "/static/media/bgAppTablet.4b3113370c70c7660731.jpg",
+    "static/media/bgAppTablet2x.jpg": "/static/media/bgAppTablet2x.4b3113370c70c7660731.jpg",
     "static/media/bgCrmTablet.jpg": "/static/media/bgCrmTablet.e3f87868888329253b61.jpg",
     "static/media/Klym_Evtushenko_desktop_2x.jpg": "/static/media/Klym_Evtushenko_desktop_2x.2e4d79f162e4c4f44f1a.jpg",
     "static/media/bgWebMax2x.jpg": "/static/media/bgWebMax2x.eab267a62421e43cd93c.jpg",
     "static/media/mobileBG2x.png": "/static/media/mobileBG2x.61a62cfcda994b9c1225.png",
-    "static/media/bgWebTablet.jpg": "/static/media/bgWebTablet.2fab3af6d2649d43a9d2.jpg",
+    "static/media/bgWebTablet2x.jpg": "/static/media/bgWebTablet2x.2fab3af6d2649d43a9d2.jpg",
     "static/media/bgLogoMobile.jpg": "/static/media/bgLogoMobile.efa5faa1a124b00bfc91.jpg",
     "static/media/hww5Mob-min.jpg": "/static/media/hww5Mob-min.fa2ebde9cc270a75bd31.jpg",
     "static/media/hww1Mob-min.jpg": "/static/media/hww1Mob-min.02e7a868292ec36745de.jpg",
@@ -160,8 +160,8 @@
     "static/media/bgCrmTablet2x.jpg": "/static/media/bgCrmTablet2x.7b3fbb5d6164aef192e0.jpg",
     "static/media/bgLogoMobile2x.jpg": "/static/media/bgLogoMobile2x.27755b1e2705807186ed.jpg",
     "static/media/k-yevtushenko.jpg": "/static/media/k-yevtushenko.70b3d8154923e193ea11.jpg",
-    "static/media/bgAppTablet2x.jpg": "/static/media/bgAppTablet2x.481118fc8a18eedb04c0.jpg",
-    "static/media/bgWebTablet2x.jpg": "/static/media/bgWebTablet2x.668861973af0e1307f0b.jpg",
+    "static/media/bgAppTablet.jpg": "/static/media/bgAppTablet.481118fc8a18eedb04c0.jpg",
+    "static/media/bgWebTablet.jpg": "/static/media/bgWebTablet.668861973af0e1307f0b.jpg",
     "static/media/Roboto-Bold-Italic.woff2": "/static/media/Roboto-Bold-Italic.e927848f71dd7fa51ebf.woff2",
     "static/media/logo.svg": "/static/media/logo.568e7bb57e92dd25120c68943ad24747.svg",
     "static/media/big-logo.svg": "/static/media/big-logo.6863edc5537f6d0539ec0b7cfc18fd08.svg",
@@ -186,11 +186,11 @@
     "static/media/burger.svg": "/static/media/burger.f500da283c21e60d5c0fa4b5ad77f524.svg",
     "static/media/plus.svg": "/static/media/plus.62aa920e29d06cc58b3c3bb6fb89dff8.svg",
     "static/media/close-icon.svg": "/static/media/close-icon.fec7c356a8b8c8bf7ab2537f6a1e1d5f.svg",
-    "main.1c843d24.css.map": "/static/css/main.1c843d24.css.map",
-    "main.fa128531.js.map": "/static/js/main.fa128531.js.map"
+    "main.52adb8e9.css.map": "/static/css/main.52adb8e9.css.map",
+    "main.56b7a920.js.map": "/static/js/main.56b7a920.js.map"
   },
   "entrypoints": [
-    "static/css/main.1c843d24.css",
-    "static/js/main.fa128531.js"
+    "static/css/main.52adb8e9.css",
+    "static/js/main.56b7a920.js"
   ]
 }
