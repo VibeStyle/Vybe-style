@@ -191,6 +191,7 @@ export const Number = styled.p`
   letter-spacing: -2.532px;
   text-transform: uppercase;
   z-index: 2;
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
   ${LiItem}:hover &,
   ${LiItem}:focus & {
     font-size: 80px;
@@ -250,6 +251,7 @@ export const Text = styled.p`
   letter-spacing: -0.736px;
   text-transform: uppercase;
   z-index: 2;
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 768px) {
     display: inline-flex;
@@ -385,6 +387,7 @@ export const NumberIconWrap = styled.div`
   display: flex;
   align-items: center;
   gap: 16px;
+  z-index: 2;
 
   @media screen and (min-width: 768px) {
     display: block;
